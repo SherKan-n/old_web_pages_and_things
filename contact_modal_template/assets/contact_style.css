@@ -1,0 +1,125 @@
+.contact {
+  display: none;
+}
+
+.contact-header {
+  height: 130px;
+  display: grid;
+  background-color: #f3f3f3;
+  padding-left: 15%;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.contact-header > h2 {
+  font-size: 40px;
+  font-weight: 400;
+  font-family: sans-serif;
+}
+
+.contact-header > h2 > span {
+  font-size: 22px;
+  letter-spacing: 1px;
+  color: #a4a4a4;
+}
+
+.form-container {
+  position: relative;
+  background-color: #f3f3f3;
+  margin: auto;
+  border-radius: 5px;
+  max-width: 700px;
+  height: fit-content;
+  border: 1px solid #8080802d;
+  margin-bottom: 25px;
+}
+
+.form-container > form {
+  display: flex;
+  height: 16rem;
+  margin-bottom: 15px;
+}
+
+form > div {
+  display: grid;
+  margin: 15px;
+  width: 100%;
+}
+
+.form-container button {
+  color: #ffffff;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 10px 15px;
+  border: transparent;
+  border-radius: 5px;
+  background-color: #55a6e0;
+  cursor: pointer;
+}
+
+.form-container button:hover {
+  background-color: #188ee2;
+}
+
+div input {
+  margin-bottom: 15px;
+  border-radius: 3px;
+  border: 1px solid #808080a0;
+}
+
+div input:placeholder-shown {
+  padding: 5px 12px;
+}
+
+div label {
+  font-weight: bold;
+}
+
+div > textarea {
+  height: 12rem;
+  border-radius: 3px;
+  border: 1px solid #808080a0;
+  max-width: 20rem;
+  max-height: 12rem;
+}
+
+div > textarea:placeholder-shown {
+  padding: 5px 12px;
+}
+
+.footer-contact {
+  display: grid;
+  position: relative;
+  margin-bottom: 15rem;
+  justify-items: center;
+}
+
+.footer-contact > h2 {
+  font-weight: 500;
+  margin-bottom: 5px;
+  font-size: 20px;
+}
+
+.footer-contact .footer-line {
+  width: 21rem;
+  height: 1px;
+  background-color: #80808030;
+  margin-bottom: 15px;
+}
+
+.footer-contact div {
+  width: 21rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.footer-contact div a {
+  text-decoration: none;
+  color: #3797db;
+}
+
+.footer-contact div a:hover {
+  color: #1989d8;
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Job on Mars</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js"></script>
+</head>
+
+<body>
+   <div class="container-apply">
+      <h1>Job Opening for Mars</h1>
+      <div class="form-box">
+         <h3>Apply for a job</h3>
+         <form>
+            <label for="name">Name</label>
+            <input id="name" type="text" autocomplete="off" placeholder="Your name" maxlength="32"><br>
+            <div class="jobs-box">
+               <span>Jobs:</span><br>
+               <input type="radio" id="miner" name="job" value="Miner">
+               <label for="miner">Miner</label><br>
+               <input type="radio" id="farmer" name="job" value="Farmer">
+               <label for="farmer">Farmer</label><br>
+               <input type="radio" id="constructor" name="job" value="Constructor">
+               <label for="constructor">Constructor</label>
+            </div>
+            <label for="country">Country</label>
+            <select id="country" name="country">
+               <option value="Romania">Romania</option>
+               <option value="Canada">Canada</option>
+               <option value="USA">USA</option>
+               <option value="France">France</option>
+            </select>
+            <div class="skills-box">
+               <span>Skills:</span><br>
+               <input type="checkbox" id="skill" name="skill" value="Creative">
+               <label for="skill1">creative</label><br>
+               <input type="checkbox" id="skill" name="skill" value="Programming">
+               <label for="skill3">programming</label><br>
+               <input type="checkbox" id="skill" name="skill" value="Teamwork">
+               <label for="skill3">teamwork</label>
+            </div><br>
+            <button onclick="sendApplication(event)">Apply</button>
+         </form>
+      </div>
+      <div class="applications-box" id="applications">
+         <h2>All <span id="count"></span> Applications</h2><br>
+         <div>
+            <div>
+               <span>Florin</span> applied for <span>Miner</span>
+            </div><br>
+            <div>
+               Country:
+               <span>Romania</span>
+            </div><br>
+            <div class="skills-show">
+               Skills:
+               <span class="skill-beadge">Programming</span><span class="skill-beadge">Teamwork</span><span
+                  class="skill-beadge">Creative</span>
+            </div>
+         </div>
+      </div>
+   </div>
+</body>
+
+</html>

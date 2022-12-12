@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Magical Land</title>
+   <link rel="stylesheet" href="assets/style.css">
+   <script src="https://kit.fontawesome.com/4bd747b15e.js" crossorigin="anonymous"></script>
+   <script src="assets/js/main.js"></script>
+</head>
+
+<body onload="initializeItems(null)">
+   <div class="nav">
+      <a href="#" onclick="setRoute('#games')">Games <i class="fa fa-gamepad"></i></a>
+      <a href="#" onclick="setRoute('#videos')">Videos <i class="fa fa-youtube-play"></i></a>
+      <a href="#" onclick="setRoute('#heroes')">Heroes <i class="fa fa-user-astronaut"></i></a>
+   </div><br>
+
+   <div class="container">
+      <i class="fa fa-angle-left left" onclick="backItems(event);"></i>
+      <div class="content" id="content"></div>
+      <i class="fa fa-angle-right right" onclick="nextItems(event);"></i>
+   </div><br>
+
+   <div class="footer">
+      <p>Authors: Florin, Cosmin, Gabriel, Alex<br>
+         <a href="https://scoalainformala.ro">Invata Programare!</a>
+      </p>
+   </div>
+</body>
+
+</html>
