@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Tema Hangman</title>
+   <link rel="stylesheet" href="style.css">
+   <script src="script.js" defer></script>
+</head>
+
+<body>
+   <div class="content">
+      <div class="letters"></div>
+      <div class="word"></div>
+      <div class="container">
+         <div class="lines first"></div>
+         <div class="lines second"></div>
+         <div class="lines third"></div>
+         <div class="lines fourth"></div>
+         <div class="lines five">
+            <div class="death invisible">
+               <span>X</span>
+               <span>X</span>
+               <span>(</span>
+            </div>
+            <div class="alive">
+               <span>O</span>
+               <span>O</span>
+               <span>)</span>
+            </div>
+         </div>
+         <div class="lines six"></div>
+         <div class="lines seven"></div>
+         <div class="lines eight"></div>
+         <div class="lines nine"></div>
+         <div class="lines ten"></div>
+      </div>
+   </div>
+   <div class="modal-lose-win">
+      <h2>Game Over !</h2>
+      <p id="text-lose-win"></p>
+      <p>Try again ?</p>
+      <img class="again" src="again.png" alt="again_image">
+      <img class="cancel" src="cancel.png" alt="cancel_image">
+      <span>The word was:</span>
+      <span>none</span>
+   </div>
+</body>
+
+</html>

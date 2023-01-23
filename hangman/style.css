@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("bg_img.jpeg") no-repeat;
+  background-size: cover;
+}
+
+.content {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: auto;
+  height: 100vh;
+  position: relative;
+}
+
+.letters {
+  width: 100%;
+  padding: 20px 15px;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.75);
+  display: flex;
+  flex-wrap: wrap;
+  border: 1px solid rgba(0, 255, 0, 0.5);
+  justify-content: space-evenly;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-top: transparent;
+}
+
+.letters span {
+  border: 2px dashed rgba(205, 122, 50, 0.8);
+  color: white;
+  padding: 10px 12px;
+  background-color: rgba(55, 0, 255, 0.185);
+  font-weight: bold;
+  font-size: 18px;
+  border-radius: 2px;
+  margin: 5px;
+}
+
+.letters span:hover {
+  border: 2px dashed rgba(0, 255, 0, 0.8);
+  cursor: pointer;
+  transform: scale(1.4);
+}
+
+.word {
+  width: auto;
+  position: absolute;
+  top: 45%;
+  right: 0;
+  color: rgb(255, 140, 0);
+  font-weight: bold;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 70px;
+  text-shadow: 1px 1px whitesmoke;
+  background-color: rgba(0, 0, 0, 0.75);
+  padding: 20px 25px;
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  border: 1px solid rgba(0, 255, 0, 0.5);
+  border-right: transparent;
+  margin: auto;
+  margin-left: 5%;
+  font-size: calc(1.5rem + 1.5vw);
+}
+
+.word > span {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.line {
+  background-color: white;
+  height: 2px;
+  width: 2rem;
+}
+
+.container {
+  position: absolute;
+  background-color: azure;
+  width: 400px;
+  height: 500px;
+  top: 25vh;
+  left: 5%;
+  border-radius: 15px;
+  border: 2px double black;
+  box-shadow: 0px 0px 25px 5px black inset;
+}
+
+.lines {
+  position: absolute;
+  background-color: black;
+}
+
+.first {
+  height: 3px;
+  width: 150px;
+  bottom: 5%;
+  left: 10%;
+}
+
+.second {
+  border-left: 3px solid black;
+  height: 450px;
+  left: 20%;
+  bottom: 5%;
+}
+
+.third {
+  height: 3px;
+  width: 300px;
+  top: 10%;
+  left: 12%;
+}
+
+.fourth {
+  border-left: 3px solid black;
+  height: 40px;
+  right: 30%;
+  top: 10%;
+}
+
+.five {
+  background-color: whitesmoke;
+  border: 3px solid black;
+  border-radius: 50%;
+  width: 85px;
+  height: 85px;
+  right: 20%;
+  top: 18%;
+}
+
+.five span:first-of-type {
+  position: absolute;
+  top: 30%;
+  left: 22%;
+  font-weight: bold;
+}
+
+.five span:nth-child(2) {
+  position: absolute;
+  top: 30%;
+  right: 22%;
+  font-weight: bold;
+}
+
+.five span:last-of-type {
+  position: absolute;
+  top: 61%;
+  right: 43%;
+  font-weight: bold;
+  transform: rotate(90deg);
+}
+
+.six {
+  border-left: 3px solid black;
+  height: 150px;
+  right: 30%;
+  top: 35%;
+}
+
+.seven {
+  border-left: 2px solid black;
+  height: 120px;
+  right: 38%;
+  top: 63%;
+  transform: rotate(32deg);
+}
+
+.eight {
+  border-left: 2px solid black;
+  height: 120px;
+  right: 23%;
+  top: 63%;
+  transform: rotate(151deg);
+}
+
+.nine {
+  border-left: 2px solid black;
+  height: 90px;
+  right: 39%;
+  top: 40%;
+  transform: rotate(50deg);
+}
+
+.ten {
+  border-left: 2px solid black;
+  height: 90px;
+  right: 22%;
+  top: 40%;
+  transform: rotate(132deg);
+}
+
+.invisible {
+  opacity: 0;
+}
+
+.modal-lose-win {
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  left: 25%;
+  background-color: rgba(0, 0, 0, 0.873);
+  width: 50%;
+  height: auto;
+  text-align: center;
+  padding: 20px;
+  border: 1px solid whitesmoke;
+  border-radius: 5px;
+  display: none;
+}
+
+.modal-lose-win > h2 {
+  padding: 5px 0 15px 0;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+.modal-lose-win > p {
+  color: aliceblue;
+  font-size: 25px;
+  margin-bottom: 25px;
+  word-spacing: 1.5px;
+}
+
+.modal-lose-win > img {
+  cursor: pointer;
+  position: absolute;
+}
+
+.modal-lose-win > span:first-of-type {
+  color: white;
+  font-family: "Tahoma,sans-serif";
+}
+
+img.again {
+  bottom: 15px;
+  left: 25px;
+  width: 45px;
+  height: 45px;
+}
+
+img.cancel {
+  bottom: 15px;
+  right: 25px;
+  width: 50px;
+  height: 50px;
+}
+
+img.again:hover,
+img.cancel:hover {
+  transform: scale(1.2);
+}
+
+.win {
+  background: -webkit-linear-gradient(#eee, limegreen, white);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lose {
+  background: -webkit-linear-gradient(#eee, red, white);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
